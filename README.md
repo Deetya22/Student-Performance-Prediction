@@ -1,6 +1,6 @@
 # 🎓 Student Performance Prediction using Machine Learning
 
-## 📌 Project Overview
+## Project Overview
 
 This project predicts students' exam scores using Machine Learning techniques based on academic, personal, and social factors.
 
@@ -17,7 +17,7 @@ The complete machine learning workflow includes:
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Dataset Name:** Student Performance Factors Dataset
 - **Source:** Kaggle
@@ -49,7 +49,7 @@ The complete machine learning workflow includes:
 
 ---
 
-# 🛠 Technologies Used
+# Technologies Used
 
 - Python
 - Pandas
@@ -62,7 +62,7 @@ The complete machine learning workflow includes:
 
 ---
 
-# 📊 Data Preprocessing
+# Data Preprocessing
 
 The following preprocessing steps were performed:
 
@@ -75,7 +75,7 @@ The following preprocessing steps were performed:
 
 ---
 
-# 📈 Exploratory Data Analysis
+# Exploratory Data Analysis
 
 The project includes the following visualizations:
 
@@ -121,7 +121,7 @@ The project includes the following visualizations:
 
 ---
 
-# 🤖 Machine Learning Models
+# Machine Learning Models
 
 Three regression algorithms were trained and evaluated:
 
@@ -131,7 +131,7 @@ Three regression algorithms were trained and evaluated:
 
 ---
 
-# 📊 Model Performance
+# Model Performance
 
 | Model | MAE | RMSE | R² Score |
 |------|------:|------:|------:|
@@ -141,7 +141,7 @@ Three regression algorithms were trained and evaluated:
 
 ---
 
-# 🏆 Best Model
+# Best Model
 
 **Linear Regression**
 
@@ -155,7 +155,7 @@ The Linear Regression model achieved the best overall performance on this datase
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 ```text
 Student-Performance-Prediction
@@ -178,7 +178,7 @@ Student-Performance-Prediction
 
 ---
 
-# 🚀 How to Run
+# How to Run
 
 ### Clone the repository
 
@@ -202,7 +202,7 @@ Run all cells to reproduce the results.
 
 ---
 
-# 💡 Future Improvements
+# Future Improvements
 
 - Hyperparameter tuning
 - Cross-validation
@@ -214,9 +214,9 @@ Run all cells to reproduce the results.
 
 ---
 
-# 👩‍💻 Author
+# Author
 
-**Deets**
+**Tirunagari Deetya Abhirami**
 
 B.Sc. Data Science Student
 
