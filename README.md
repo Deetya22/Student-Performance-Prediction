@@ -101,7 +101,7 @@ The Linear Regression model was evaluated using the following metrics:
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Add more student features
 - Compare multiple ML algorithms
@@ -110,6 +110,6 @@ The Linear Regression model was evaluated using the following metrics:
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 Created by **Tirunagari Deetya Abhirami**
