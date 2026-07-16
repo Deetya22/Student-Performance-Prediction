@@ -83,12 +83,21 @@ Algorithm Used:
 
 ---
 
+
 ## 📏 Model Evaluation
 
-Evaluation Metrics:
+The Linear Regression model was evaluated using the following metrics:
 
-- Mean Absolute Error (MAE)
-- R² Score
+- **Mean Absolute Error (MAE):** 8.93
+- **R² Score:** -0.002
+
+### Interpretation
+
+- The model's predictions are, on average, about **8.93 marks** away from the actual student scores.
+- The **R² score of -0.002** indicates that the Linear Regression model did **not fit this dataset well** and performed worse than simply predicting the average score.
+- This suggests that the selected features (Study Hours and Attendance) were not sufficient to accurately predict student performance for this dataset.
+
+---
 
 ---
 
