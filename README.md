@@ -67,11 +67,11 @@ The following visualizations were created:
 
 ### Histogram
 
-![Histogram](images/histogram.png)
+![Histogram](histogram.png)
 
 ### Scatter Plot
 
-![Scatter Plot](images/scatter_plot.png)
+![Scatter Plot](scatter_plot.png)
 
 ---
 
@@ -103,4 +103,4 @@ Evaluation Metrics:
 
 ## 👩‍💻 Author
 
-Created by **Deets**
+Created by **Tirunagari Deetya Abhirami**
