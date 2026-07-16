@@ -1,115 +1,227 @@
-# Student Performance Prediction
+# 🎓 Student Performance Prediction using Machine Learning
 
-## Project Overview
+## 📌 Project Overview
 
-This project predicts a student's final score based on factors such as study hours and attendance using Machine Learning.
+This project predicts students' exam scores using Machine Learning techniques based on academic, personal, and social factors.
 
-It demonstrates the complete Machine Learning workflow, including:
+The complete machine learning workflow includes:
 
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
 - Data Visualization
+- Feature Engineering
 - Model Training
+- Model Comparison
 - Model Evaluation
-- Prediction
+- Model Saving
 
 ---
 
-## Objective
+## 📂 Dataset
 
-To build a Linear Regression model that predicts student performance using academic data.
+- **Dataset Name:** Student Performance Factors Dataset
+- **Source:** Kaggle
+- **Total Records:** 6,607
+- **Total Features:** 20
+
+### Features include:
+
+- Hours Studied
+- Attendance
+- Previous Scores
+- Sleep Hours
+- Motivation Level
+- Teacher Quality
+- Family Income
+- Internet Access
+- Physical Activity
+- Tutoring Sessions
+- School Type
+- Peer Influence
+- Gender
+- Distance from Home
+- Parental Education
+- and more...
+
+### Target Variable
+
+- **Exam_Score**
 
 ---
 
-## Technologies Used
+# 🛠 Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
 - Scikit-learn
+- Joblib
 - Google Colab
+- GitHub
 
 ---
 
-## Dataset
+# 📊 Data Preprocessing
 
-Student Performance Dataset
+The following preprocessing steps were performed:
 
-Features used:
-
-- Study Hours
-- Attendance
-
-Target:
-
-- Final Score
+- Loaded the dataset
+- Checked dataset information
+- Handled missing values
+- Removed duplicate values
+- Encoded categorical variables using Label Encoding
+- Prepared features and target variable
 
 ---
 
-## Data Cleaning
+# 📈 Exploratory Data Analysis
 
-The dataset was cleaned by:
+The project includes the following visualizations:
 
-- Removing missing values
-- Removing duplicate rows
-- Checking data types
+## Correlation Heatmap
 
----
-
-## Data Visualization
-
-The following visualizations were created:
-
-- Histogram of Study Hours
-- Scatter Plot of Study Hours vs Final Score
-- Correlation Matrix
-
-### Histogram
-
-![Histogram](histogram.png)
-
-### Scatter Plot
-
-![Scatter Plot](scatter_plot.png)
+![Heatmap](heatmap.png)
 
 ---
 
-## Machine Learning Model
+## Exam Score Distribution
 
-Algorithm Used:
+![Histogram](exam_score_histogram.png)
+
+---
+
+## Hours Studied vs Exam Score
+
+![Hours Studied](hours_vs_exam.png)
+
+---
+
+## Attendance vs Exam Score
+
+![Attendance](attendance_vs_exam.png)
+
+---
+
+## Box Plot
+
+![Boxplot](boxplot.png)
+
+---
+
+## Actual vs Predicted Scores
+
+![Actual vs Predicted](actual_vs_predicted.png)
+
+---
+
+## Model Comparison
+
+![Model Comparison](model_comparison.png)
+
+---
+
+# 🤖 Machine Learning Models
+
+Three regression algorithms were trained and evaluated:
+
+1. Linear Regression
+2. Decision Tree Regressor
+3. Random Forest Regressor
+
+---
+
+# 📊 Model Performance
+
+| Model | MAE | RMSE | R² Score |
+|------|------:|------:|------:|
+| **Linear Regression** | **1.02** | **2.10** | **0.6888** |
+| Random Forest | 1.13 | 2.21 | 0.6546 |
+| Decision Tree | 1.73 | 3.30 | 0.2305 |
+
+---
+
+# 🏆 Best Model
 
 **Linear Regression**
 
----
+Performance:
 
+- Mean Absolute Error (MAE): **1.02**
+- Root Mean Squared Error (RMSE): **2.10**
+- R² Score: **0.6888**
 
-## Model Evaluation
-
-The Linear Regression model was evaluated using the following metrics:
-
-- **Mean Absolute Error (MAE):** 8.93
-- **R² Score:** -0.002
-
-### Interpretation
-
-- The model's predictions are, on average, about **8.93 marks** away from the actual student scores.
-- The **R² score of -0.002** indicates that the Linear Regression model did **not fit this dataset well** and performed worse than simply predicting the average score.
-- This suggests that the selected features (Study Hours and Attendance) were not sufficient to accurately predict student performance for this dataset.
+The Linear Regression model achieved the best overall performance on this dataset and was selected as the final model.
 
 ---
 
+# 📁 Project Structure
+
+```text
+Student-Performance-Prediction
+│
+├── Student_Performance_Prediction.ipynb
+├── StudentPerformanceFactors.csv
+├── student_performance_model.pkl
+├── README.md
+├── requirements.txt
+├── LICENSE
+│
+├── heatmap.png
+├── exam_score_histogram.png
+├── hours_vs_exam.png
+├── attendance_vs_exam.png
+├── boxplot.png
+├── actual_vs_predicted.png
+└── model_comparison.png
+```
+
 ---
 
-## Future Improvements
+# 🚀 How to Run
 
-- Add more student features
-- Compare multiple ML algorithms
-- Deploy using Streamlit
-- Improve prediction accuracy
+### Clone the repository
+
+```bash
+git clone https://github.com/Deetya22/Student-Performance-Prediction.git
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Open the notebook
+
+```text
+Student_Performance_Prediction.ipynb
+```
+
+Run all cells to reproduce the results.
 
 ---
 
-## Author
+# 💡 Future Improvements
 
-Created by **Tirunagari Deetya Abhirami**
+- Hyperparameter tuning
+- Cross-validation
+- XGBoost Regressor
+- LightGBM Regressor
+- Feature importance analysis
+- Streamlit web application
+- Model deployment
+
+---
+
+# 👩‍💻 Author
+
+**Deets**
+
+B.Sc. Data Science Student
+
+---
+
+# ⭐ If you found this project useful
+
+Please consider giving it a ⭐ on GitHub!
