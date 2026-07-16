@@ -1,55 +1,64 @@
-# 🎓 Student Performance Prediction using Machine Learning
+# Student Performance Prediction using Machine Learning
 
-## Project Overview
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikitlearn)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/Deetya22/Student-Performance-Prediction)
 
-This project predicts students' exam scores using Machine Learning techniques based on academic, personal, and social factors.
+---
 
-The complete machine learning workflow includes:
+## About This Project
 
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Data Visualization
-- Feature Engineering
-- Model Training
-- Model Comparison
-- Model Evaluation
-- Model Saving
+I built this project to understand how different academic, personal, and social factors influence students' exam performance using Machine Learning.
+
+Instead of training only one model, I compared three different regression algorithms and evaluated their performance using MAE, RMSE, and R² Score.
+
+This project follows a complete machine learning workflow, from data preprocessing and visualization to model training, evaluation, and model saving.
+
+---
+
+## Objectives
+
+- Explore the Student Performance Factors dataset
+- Clean and preprocess the data
+- Perform Exploratory Data Analysis (EDA)
+- Train multiple machine learning models
+- Compare model performance
+- Select the best-performing model
+- Save the trained model for future use
 
 ---
 
 ## Dataset
 
-- **Dataset Name:** Student Performance Factors Dataset
-- **Source:** Kaggle
-- **Total Records:** 6,607
-- **Total Features:** 20
+- Source: Kaggle
+- Records: 6,607
+- Features: 20
 
-### Features include:
+Target Variable:
+
+- Exam_Score
+
+Some important features include:
 
 - Hours Studied
 - Attendance
 - Previous Scores
 - Sleep Hours
-- Motivation Level
 - Teacher Quality
-- Family Income
-- Internet Access
-- Physical Activity
+- Motivation Level
 - Tutoring Sessions
+- Internet Access
+- Family Income
+- Physical Activity
 - School Type
 - Peer Influence
-- Gender
-- Distance from Home
-- Parental Education
-- and more...
-
-### Target Variable
-
-- **Exam_Score**
 
 ---
 
-# Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
@@ -62,103 +71,69 @@ The complete machine learning workflow includes:
 
 ---
 
-# Data Preprocessing
+## Data Preprocessing
 
 The following preprocessing steps were performed:
 
 - Loaded the dataset
-- Checked dataset information
+- Checked data types
 - Handled missing values
-- Removed duplicate values
+- Verified duplicate records
 - Encoded categorical variables using Label Encoding
-- Prepared features and target variable
+- Prepared feature and target variables
 
 ---
 
-# Exploratory Data Analysis
+## Exploratory Data Analysis
 
-The project includes the following visualizations:
+The project includes several visualizations:
 
-## Correlation Heatmap
-
-![Heatmap](heatmap.png)
-
----
-
-## Exam Score Distribution
-
-![Histogram](exam_score_histogram.png)
+- Correlation Heatmap
+- Exam Score Distribution
+- Hours Studied vs Exam Score
+- Attendance vs Exam Score
+- Box Plot
+- Actual vs Predicted Scores
+- Model Comparison
 
 ---
 
-## Hours Studied vs Exam Score
+## Machine Learning Models
 
-![Hours Studied](hours_vs_exam.png)
+The following regression models were trained and compared:
 
----
-
-## Attendance vs Exam Score
-
-![Attendance](attendance_vs_exam.png)
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
 
 ---
 
-## Box Plot
-
-![Boxplot](boxplot.png)
-
----
-
-## Actual vs Predicted Scores
-
-![Actual vs Predicted](actual_vs_predicted.png)
-
----
-
-## Model Comparison
-
-![Model Comparison](model_comparison.png)
-
----
-
-# Machine Learning Models
-
-Three regression algorithms were trained and evaluated:
-
-1. Linear Regression
-2. Decision Tree Regressor
-3. Random Forest Regressor
-
----
-
-# Model Performance
+## Model Performance
 
 | Model | MAE | RMSE | R² Score |
-|------|------:|------:|------:|
-| **Linear Regression** | **1.02** | **2.10** | **0.6888** |
+|-------|------:|------:|------:|
+| Linear Regression | 1.02 | 2.10 | 0.6888 |
 | Random Forest | 1.13 | 2.21 | 0.6546 |
 | Decision Tree | 1.73 | 3.30 | 0.2305 |
 
 ---
 
-# Best Model
+## Best Model
 
-**Linear Regression**
+After comparing all three models, Linear Regression achieved the best performance on this dataset.
 
-Performance:
+- MAE: 1.02
+- RMSE: 2.10
+- R² Score: 0.6888
 
-- Mean Absolute Error (MAE): **1.02**
-- Root Mean Squared Error (RMSE): **2.10**
-- R² Score: **0.6888**
-
-The Linear Regression model achieved the best overall performance on this dataset and was selected as the final model.
+The trained model was saved using Joblib for future predictions.
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```text
-Student-Performance-Prediction
+Student-Performance-Prediction/
 │
 ├── Student_Performance_Prediction.ipynb
 ├── StudentPerformanceFactors.csv
@@ -166,7 +141,6 @@ Student-Performance-Prediction
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
-│
 ├── heatmap.png
 ├── exam_score_histogram.png
 ├── hours_vs_exam.png
@@ -178,50 +152,58 @@ Student-Performance-Prediction
 
 ---
 
-# How to Run
+## How to Run
 
-### Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/Deetya22/Student-Performance-Prediction.git
 ```
 
-### Install dependencies
+Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Open the notebook
-
-```text
-Student_Performance_Prediction.ipynb
-```
-
-Run all cells to reproduce the results.
+Open the notebook and run all cells.
 
 ---
 
-# Future Improvements
+## What I Learned
+
+Working on this project helped me understand:
+
+- Data preprocessing techniques
+- Label Encoding
+- Exploratory Data Analysis
+- Feature correlation
+- Regression algorithms
+- Model evaluation using MAE, RMSE and R² Score
+- Comparing multiple machine learning models
+- Using GitHub to document and share projects
+
+---
+
+## Future Improvements
 
 - Hyperparameter tuning
 - Cross-validation
-- XGBoost Regressor
-- LightGBM Regressor
 - Feature importance analysis
+- XGBoost
 - Streamlit web application
 - Model deployment
 
 ---
 
-# Author
+## Author
 
 **Tirunagari Deetya Abhirami**
 
 B.Sc. Data Science Student
 
+Learning Machine Learning through hands-on projects.
+
 ---
 
-# If you found this project useful
-
-Please consider giving it a ⭐ on GitHub!
+⭐ If you found this project useful, please consider giving it a star.
