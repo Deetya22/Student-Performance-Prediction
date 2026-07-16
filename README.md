@@ -1,6 +1,6 @@
-# 🎓 Student Performance Prediction
+# Student Performance Prediction
 
-## 📌 Project Overview
+## Project Overview
 
 This project predicts a student's final score based on factors such as study hours and attendance using Machine Learning.
 
@@ -15,13 +15,13 @@ It demonstrates the complete Machine Learning workflow, including:
 
 ---
 
-## 🎯 Objective
+## Objective
 
 To build a Linear Regression model that predicts student performance using academic data.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
@@ -32,7 +32,7 @@ To build a Linear Regression model that predicts student performance using acade
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 Student Performance Dataset
 
@@ -47,7 +47,7 @@ Target:
 
 ---
 
-## 📊 Data Cleaning
+## Data Cleaning
 
 The dataset was cleaned by:
 
@@ -57,7 +57,7 @@ The dataset was cleaned by:
 
 ---
 
-## 📈 Data Visualization
+## Data Visualization
 
 The following visualizations were created:
 
@@ -75,7 +75,7 @@ The following visualizations were created:
 
 ---
 
-## 🤖 Machine Learning Model
+## Machine Learning Model
 
 Algorithm Used:
 
@@ -84,7 +84,7 @@ Algorithm Used:
 ---
 
 
-## 📏 Model Evaluation
+## Model Evaluation
 
 The Linear Regression model was evaluated using the following metrics:
 
